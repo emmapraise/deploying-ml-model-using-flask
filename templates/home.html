@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ml Flask</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename= 'css/style.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename= 'css/bootstrap.css')}}">
+</head>
+<body>
+	
+		<div align="center" class="bg-info">
+	<h1>Spam detector for Youtube comments</h1></div>
+	<div class="big" align="center">
+		<form action="{{url_for('predict')}}" method="POST">
+			<h3>Enter Your comment Here</h3>
+
+			<textarea name="comment" rows="4" cols="50"></textarea>
+			<br>
+			<input type="submit" name="" value="Predict" class="btn btn-info">
+		</form>
+	</div>
+
+</body>
+</html>

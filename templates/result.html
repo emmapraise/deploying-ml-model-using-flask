@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Result</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename= 'css/style.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename= 'css/bootstrap.css')}}">
+</head>
+<body>
+	<div class="bg-info" align="center">
+	<h2>Results</h2>
+	</div>
+	<div align="center">
+		{% if prediction == 1 %}
+		<h2 class="text-danger">Spam</h2>
+		{% elif prediction == 0%}
+		<h2 class="text-success">Not a Spam (It is Ham)</h2>
+		{% endif %}
+	</div>
+</body>
+</html>
