@@ -1,16 +1,14 @@
-.predict{
+.predict {
 	background-color: red;
 }
-.container{
-	
-}
-.header{
+
+.header {
 	background-color: blue;
 	height: 100px;
 	color: white;
 	margin: 0;
 }
-#.btn{
+#.btn {
 	width: 150px;
 	height: 50px;
 	font-size: 30px;
